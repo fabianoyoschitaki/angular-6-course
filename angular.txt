@@ -68,6 +68,12 @@ index.html has <app-root>
 	another option is to select by class:
 		selector: 'app-servers',
 		selector: '.app-servers', 
+	
+	<app-servers> : for components 
+	
+[Assignment: Practicing Components]
+Time to practice what you learned about Components. In this assignment, you're going to create, 
+use and style your own components and see practice how you can build up your Angular app with Components.
 		
 	
 
