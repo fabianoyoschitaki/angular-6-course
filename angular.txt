@@ -54,9 +54,23 @@ index.html has <app-root>
 		}
 	  `]
 	
+[fully understanding the component selector]
+	let's talk about the @Component selector. You can change:
+		selector: 'app-servers',
+		selector: '[app-servers]', it becomes an attribute
 	
+	and then, when using it, change it:
+		<app-servers></app-servers>
+		<div app-servers>
+		
+	now angular selects the component by attribute, not by the element itself.
 	
+	another option is to select by class:
+		selector: 'app-servers',
+		selector: '.app-servers', 
+		
 	
+
 	
 	
 	
