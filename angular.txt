@@ -44,6 +44,15 @@ index.html has <app-root>
 		single line -> template: '<app-server></app-server><app-server></app-server>'
 		multiple lines -> template: `<app-server></app-server>
 									 <app-server></app-server>`
+									 
+[working with component styles]
+	@Component file, you can:
+	 //styleUrls: ['./app.component.css']
+	  styles: [`
+		h3 {
+		  color: dodgerblue;
+		}
+	  `]
 	
 	
 	
