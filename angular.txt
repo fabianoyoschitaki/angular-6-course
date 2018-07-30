@@ -35,6 +35,16 @@ index.html has <app-root>
 	
 	Register new component in the app.module.ts, declarations array.
 	
+[creating new component with CLI and nesting]
+	ng generate component servers (or ng g c servers)
+	* spec file basically is used for testing
+	
+[working with component templates]
+	 templateUrl: './servers.component.html', 
+		single line -> template: '<app-server></app-server><app-server></app-server>'
+		multiple lines -> template: `<app-server></app-server>
+									 <app-server></app-server>`
+	
 	
 	
 	
