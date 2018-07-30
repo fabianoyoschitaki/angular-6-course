@@ -27,3 +27,38 @@ index.html has <app-root>
 	],
 	save and re-run ng serve to load the new configuration
 	
+* Angular in the end is a JS framework, changing your DOM (html) at runtime.
+
+[components]
+	you build your whole application by composing it from a couple of components. Each component has its own template, its html code, styling and more important its own business logic. 
+	we should add components to app.component.html, not to index.html
+	
+	Register new component in the app.module.ts, declarations array.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
