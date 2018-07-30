@@ -1,0 +1,29 @@
+[update npm]
+npm install -g npm
+
+[update angular CLI]
+npm uninstall -g angular-cli @angular/cli@latest (optional)
+npm install @angular/cli
+
+ng new my-dream-app
+cd my-dream-app
+ng serve
+
+URL: localhost:4200 
+
+Angular component
+	template: the html code
+	possible styling: css file 
+	typescript file: the definition of the component, this is what will be converted to normal javascript by the build workflow
+	
+index.html has <app-root>
+
+[install bootstrap locally, not globally]
+	npm install --save bootstrap@3
+	open angular.json and find "architect"/"build"/"styles", change it from "src/styles.css" 
+	"styles": [
+	  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+	  "src/styles.css"
+	],
+	save and re-run ng serve to load the new configuration
+	
