@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
                 padding: 20px;
                 background-color: mistyrose;
                 border: 1px solid red;
+                font-weight: bold;
             }
         `
     ],

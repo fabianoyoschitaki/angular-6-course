@@ -80,18 +80,58 @@ use and style your own components and see practice how you can build up your Ang
 	let's show something that is not hard-coded into the template with databinding. 
 	Databinding = Communication between TS code of your component, the business logic, and the template, what the user sees.
 	We can use:
-		---- Output data ---->
+		----- Output data ---->>>
 		String Interpolation: {{data}}
 		Property Binding [property]="data"
 		
-		<---- React to user events ----
+		<<<---- React to user events ----
 		Event binding (event)="expression" //a click event for instance
 		
 	Combination of both:
 		Two-Way-Binding [(ngModel)]="data"
-		
-	
 
+[23 - String interpolation]
+	output data to a template.
+	
+	-server.component.ts
+	export class ServerComponent {
+		serverId: number = 10;
+		serverStatus: string = 'offline';
+
+		getServerStatus() {
+			return this.serverStatus;
+		}
+	}
+	
+	-server.component.html
+	<p>{{ 'Server' }} with ID {{serverId}} is {{getServerStatus()}}</p>
+
+[24 - Property Binding]
+	[ ] indicate property binding
+	
+	<button 
+    class='btn btn-primary' 
+    [disabled]="!allowNewServer">Add Server</button>
+	
+	export class ServersComponent implements OnInit {
+	  allowNewServer = false;
+
+	  constructor() { 
+		setTimeout(() => {
+		  this.allowNewServer = true;
+		}, 2000);
+	  }
+	}
+	
+[25 - Property Binding vs String Interpolation]
+	<p>{{ allowNewServer }}</p>
+	<p [innerText]="allowNewServer"></p>
+	
+	when should we use which of the two?
+	output something in your template: string interpolation
+	change some property: property binding
+	
+[26 - Event Binding]
 	
 	
 	
