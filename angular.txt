@@ -179,6 +179,8 @@ use and style your own components and see practice how you can build up your Ang
     class="form-control"
     [(ngModel)]="serverName">
 	
+[31 - Combining all forms of databinding]
+	
 	
 	
 	
