@@ -220,7 +220,10 @@ use and style your own components and see practice how you can build up your Ang
 	}
 
 [34 - Enhancing ngIf with an Else Condition]
-	
+	<p *ngIf="serverCreated;  else noServer">ngIf Server was created, server name is {{ serverName }}</p>
+	<ng-template #noServer>
+		<p>ngIf-else No server was created!</p>    
+	</ng-template>
 
 [35 - Styling Elements Dynamically with ngStyle]
              
