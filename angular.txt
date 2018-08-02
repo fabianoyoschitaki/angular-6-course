@@ -180,7 +180,19 @@ use and style your own components and see practice how you can build up your Ang
     [(ngModel)]="serverName">
 	
 [31 - Combining all forms of databinding]
+	* Add a Input field which updates a property ('username') via Two-Way-Binding
+	* Output the username property via String Interpolation (in a paragraph below the input)
+	* Add a button which may only be clicked if the username is NOT an empty string
+	* Upon clicking the button, the username should be reset to an empty string
 	
+	<label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{ username }}</p>
+      <button
+        class="btn btn-primary"
+        [disabled]="username === ''"
+        (click)="username = ''">Reset User</button>
+             
 	
 	
 	
