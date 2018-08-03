@@ -220,16 +220,54 @@ use and style your own components and see practice how you can build up your Ang
 	}
 
 [34 - Enhancing ngIf with an Else Condition]
+	ngIf is a structure directive
+	
 	<p *ngIf="serverCreated;  else noServer">ngIf Server was created, server name is {{ serverName }}</p>
 	<ng-template #noServer>
 		<p>ngIf-else No server was created!</p>    
 	</ng-template>
 
 [35 - Styling Elements Dynamically with ngStyle]
-             
+    unlike structural directives, attribute directives don't add or remove elements. They only change the element they were placed on.
+	change the color depending on the status of the server (online or offline)
 	
+	server.component.html
+	<p [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} with ID {{serverId}} is {{getServerStatus()}}</p>
 	
+	server.component.ts
+	getColor(){
+        return this.serverStatus === 'online' ? 'green' : 'red';
+    }
 	
+	the directive is only ngStyle. The brackets indicates you want to bind a property on this directive. Property binding is not a directive, it's totally different. 
+	Here, we are binding to a property of a directive.
+	
+[36 - Applying CSS Classes Dynamically with ngClass]
+	server.component.html
+	<p 
+		...
+		[ngClass]="{online: serverStatus === 'online'}">
+		{{ 'Server' }} with ID {{serverId}} is {{getServerStatus()}}
+	</p>
+	
+	server.component.ts
+		@Component({
+		...
+		styles: [`
+			.online {
+				color: white;
+			}
+		`]
+})
+
+[37 - Outputting Lists with ngFor]
+	
+
+[38 - ]
+
+[39]
+
+
 	
 	
 	
