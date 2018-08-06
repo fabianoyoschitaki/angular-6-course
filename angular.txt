@@ -261,8 +261,22 @@ use and style your own components and see practice how you can build up your Ang
 })
 
 [37 - Outputting Lists with ngFor]
+	servers.component.ts
+	export class ServersComponent implements OnInit {
+		servers = ['Testserver 1', 'Testserver 2'];
+		...
 	
+		onCreateServer(){
+			this.serverCreated = true;
+			this.servers.push(this.serverName);
+			this.serverCreationStatus = "Server was created! Name is " + this.serverName;
+		  }
 
+	servers.component.html
+	<app-server *ngFor="let server of servers"></app-server>
+
+[Assignment]
+	
 [38 - ]
 
 [39]
