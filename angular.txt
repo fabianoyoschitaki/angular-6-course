@@ -289,9 +289,22 @@ Section 3 - Course Project - The Basics
 ===================================================
 	
 [39 - Project Introduction]
+	Time to practice the things you learned thus far in our course project.
+	Now what is our course project? My goal in this project which we will build for the course to which will come back after the individual
+	sections of this course is to build a recipe book and shopping list app.
+	You saw it in the intro video of the course.
+	Basically there we're going to have two sections shopping list and recipe book and we will be able to
+	manage our recipes, view them in detail and also to manage our shopping list and even push ingredients
+	from our recipe directly to a shopping list.
+	This application will use a lot of the features we learned from the course and therefore I think it's
+	perfect to practice these things and see them come together in a real app.
+	First of all though let's try to plan the application because before creating yet you of course need
+	to have a plan and therefore in the next lecture we're going to think about which components we will
+	need for the different features of this application.
 
 [40 - Planning the App]
-
+	
+	
 [41 - Installing Bootstrap Correctly]
 
 [42 - Setting up the Application]
