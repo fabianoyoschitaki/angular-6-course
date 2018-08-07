@@ -277,13 +277,78 @@ use and style your own components and see practice how you can build up your Ang
 
 [Assignment]
 	
-[38 - ]
+[38 - Getting the Index when using ngFor]
+	<div
+        *ngFor="let logItem of log; let i = index"
+        [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': i >= 4}"
+      >{{ logItem }}</div>
 
-[39]
-
-
+===================================================
+Section 3 - Course Project - The Basics
+===================================================
 	
+[39 - Project Introduction]
+
+[40 - Planning the App]
+
+[41 - Installing Bootstrap Correctly]
+
+[42 - Setting up the Application]
+
+[43 - Creating the Components]
+
+[44 - Using the Components]
+
+[45 - Adding a Navigation Bar]
+
+[46 - Alternative Non-Collapsable Natigation Bar]
+
+[47 - Creating a "Recipe" Model]
+
+[48 - Adding Content to the Recipe Components]
+
+[49 - Outputting a List of Recipes with ngFor]
+
+[50 - Displaying Recipe Details]
+
+[51 - Working on the ShoppingListComponent]
+
+[52 - Creating an "Ingredient" Model]
+
+[53 - Creating and Outputting the Shopping List]
+
+[54 - Adding a Shopping List Edit Section]
+
+[55 - Wrap Up & Next Steps]
+
+===================================================
+Section 4 - Debugging
+===================================================
+
+[56 - Understanding Angular Errors Messages]
+
+[57 - Debugging Code in the Browser using Sourcemaps]
+
+[58 - Using Augury to Dive into Angular Apps]
+
+===================================================
+Section 5 - Components and Databinding Deep Dive
+===================================================
 	
+[59 - Module Introduction]	
+
+[60 - Splitting Apps into Components]	
+
+[61 - Property and Event Binding Overview]	
+
+[62 - Binding to Custom Properties]	
+
+[63 - Assigning an Alias to Custom Properties]	
+
+[64 - Binding to Custom Events]	
+
+[65 - Assigning an Alias to Custom Events]	
 	
 	
 	
